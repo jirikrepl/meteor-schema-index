@@ -12,6 +12,6 @@ Package.onUse(function(api) {
     'ecmascript@0.6.1',
   ]);
 
-  api.mainModule('client.js', 'client');
+  api.mainModule('client.js', 'client', { lazy: true });
   api.mainModule('server.js', 'server');
 });
